@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Premium Stopwatch</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="background-blur blur1"></div>
+<div class="background-blur blur2"></div>
+
+<div class="container">
+
+    <!-- Header -->
+
+    <div class="header">
+
+        <i class="fa-solid fa-stopwatch"></i>
+
+        <h1>Stopwatch</h1>
+
+    </div>
+
+    <!-- Progress Ring -->
+
+    <div class="progress-container">
+
+        <svg class="progress-ring" width="280" height="280">
+
+            <circle
+                class="progress-bg"
+                cx="140"
+                cy="140"
+                r="120">
+            </circle>
+
+            <circle
+                id="progressCircle"
+                class="progress-bar"
+                cx="140"
+                cy="140"
+                r="120">
+            </circle>
+
+        </svg>
+
+        <div class="time-container">
+
+            <div id="display">
+
+                <span id="hours">00</span>
+                <span>:</span>
+
+                <span id="minutes">00</span>
+                <span>:</span>
+
+                <span id="seconds">00</span>
+
+            </div>
+
+            <div id="milliseconds">
+
+                000
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Controls -->
+
+    <div class="controls">
+
+        <button id="resetBtn" class="btn danger">
+
+            <i class="fa-solid fa-rotate-left"></i>
+
+            <span>Reset</span>
+
+        </button>
+
+        <button id="startBtn" class="btn success">
+
+            <i class="fa-solid fa-play"></i>
+
+            <span>Start</span>
+
+        </button>
+
+        <button id="lapBtn" class="btn primary">
+
+            <i class="fa-solid fa-flag"></i>
+
+            <span>Lap</span>
+
+        </button>
+
+    </div>
+
+    <!-- Extra Buttons -->
+
+    <div class="toolbar">
+
+        <button id="themeBtn">
+
+            🌙 Theme
+
+        </button>
+
+        <button id="downloadBtn">
+
+            📥 Export CSV
+
+        </button>
+
+    </div>
+
+    <!-- Statistics -->
+
+    <div class="stats">
+
+        <div class="stat-card">
+
+            <h3>🏆 Fastest</h3>
+
+            <p id="fastest">
+
+                --
+
+            </p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3>🐢 Slowest</h3>
+
+            <p id="slowest">
+
+                --
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Lap List -->
+
+    <div class="lap-container">
+
+        <div class="lap-header">
+
+            <span>Lap</span>
+
+            <span>Time</span>
+
+        </div>
+
+        <ul id="lapList">
+
+        </ul>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
