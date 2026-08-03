@@ -85,9 +85,9 @@ Use **VS Code** with the **Live Server** extension.
 
 **SRIVASAN S**
 
-GitHub: https://github.com/
+GitHub: https://github.com/srivasan16    
 
-LinkedIn: https://linkedin.com/in/
+LinkedIn: https://www.linkedin.com/in/sri-vasan-87b29126a
 
 ---
 
